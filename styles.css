@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #b0c4de;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 2.3rem;
+}
+
+.text {
+  text-align: center;
+  padding-top: 0.4rem;
+}
+
+.notas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 1.8rem;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.nota {
+  background-color: #98fb98;
+  height: 200px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem;
+  resize: none;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.nota:focus,
+.nota:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.btn {
+  background-color: #f5f5dc;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 5rem;
+}
+
+.btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #d2b48c;
+  transition: all 0.5s ease;
+}
+
+.nota::placeholder {
+  color: black;
+  opacity: 40%;
+}
